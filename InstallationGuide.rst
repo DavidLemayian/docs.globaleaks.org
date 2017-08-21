@@ -28,4 +28,4 @@ There is a :doc:`Configuration Guide </ConfigurationGuide>` for your new GlobaLe
 
 GlobaLeaks is generally exposed only via Tor (which is preferable)
 
-While not as secure, it is possible to run GlobaLeaks like a normal website through the admin interface under Network Settings. The interface will help you get a certificate. We recommend using `Letsencrypt <https://letsencrypt.org/>`_ as your Certificate Authority.
+While not as secure, it is possible to run GlobaLeaks like a normal website through the admin interface under Network Settings. The interface will help you get a certificate. We recommend using `Let's Encrypt <https://letsencrypt.org/>`_ as your certificate authority.
