@@ -4,9 +4,9 @@ Backup Guide
 
 The following commands are required in order to create a backup of GlobaLeaks:
 
-date=`date +"%Y-%m-%d"`
+"date=`date +"%Y-%m-%d"`
 version=`dpkg -l | awk '$2=="globaleaks" { print $3 }'`
-tar zcvfp /tmp/globaleaks-backup-$date-$version.tar.gz /var/globaleaks/ /etc/default/globaleaks
-After the completion of the command you will find inside the temporary directory /tmp/ a tar.gz archive with the name globaleaks-backup-YYYY-MM-DD-XX-YY.ZZ.tar.gz including the archived globaleaks data necessary for backup and restore needs.
+tar zcvfp /tmp/globaleaks-backup-$date-$version.tar.gz /var/globaleaks/ /etc/default/globaleaks".
+After the completion of the command you will find  a tar.gz archive within the /tmp (temporary directory named globaleaks-backup-YYYY-MM-DD-XX-YY.ZZ.tar.gz including the archived GlobaLeaks data necessary for backup and restoration.
 
-If you require to archive permanently the backup proceed saving that backup in your preferred directory.
+If you want to archive the backup permanently, go ahead and save it anywhere you want.
