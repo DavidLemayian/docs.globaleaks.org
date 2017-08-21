@@ -1,15 +1,13 @@
-Through the adminstrator control panel GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe. Use caution with the advanced features. Some of them are experimental, and may be removed or changed in newer versions of the software.
+Through the adminstrators control panel, GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe, and caution is adviced using the advanced features. Some are experimental, and may be removed or changed in future versions of the software.
 
-Basic customization guide (safe and suggested)
+Basic Customization Guide (default)
 
 
-The Basic Customization Guide enables you to customize all the most important features of the application like for example:
+The Basic Customization Guide enables you to customize all the most important features of the application, like for example:
 
-texts of the interface;
+Interface text;
 the look and feel (CSS, Fonts, Logos, Background)
-All this settings are available through the admin panel offered by the application and this is the safe way to customize the application.
-
-This is the safe and suggested guide to customize GlobaLeaks.
+All these settings are available through the admin panel offered by the application, and this is the safe way to customize the application.
 
 Node Info Customization
 
@@ -25,21 +23,21 @@ Tor Hidden Service
 Tor2web Public Site
 Look and Feel Customization
 
-On page http://[...]/#/admin/content, on tab "Theme Customization" it's possible to customize the look and feel by uploading custom CSS.
+On page http://[…]/#/admin/content, on tab "Theme Customization" it's possible to customize the look and feel by uploading custom CSS.
 
 DANGER! Be aware that you can easily compromise a whistleblowers identity by embedding custom fonts, images from external sources, and links to other websites. This is especially important if you are making the platform available over HTTPS.
 
-The file uploaded permits to override all of the default Globaleaks' CSS directives.
+Uploaded files will override the default Globaleaks' CSS files.
 
-On the same page it's possible to upload a custom file "Load Custom File", in order to load custom files (e.g., a custom favicon.ico, a robots.txt or a background.png).
+On the same page it's possible to upload a custom file by clicking "Load Custom File", (e.g., custom favicon.ico, robots.txt or a background.png).
 
-Uploaded files will be accessible in the /static path (e.g., static/file.ext).
+Uploaded files are accessible in the /static path (e.g., static/file.ext).
 
 Background Color Customization Example
 
 This CSS example shows how to customize the Background Color of the application.
 
-Let's create a file styles.css as follow:
+Let's create a file styles.css as follows:
 
 body
 {
@@ -47,22 +45,22 @@ body
 }
 Background Image Customization Example
 
-This CSS example shows how to customize the Background Image of the application. Upload a background image through the "Load Custom File button"; let's suppose 'background.png'.
+This CSS example shows how to customize the background image of the application. Upload a background image through the "Load Custom File button"; let's call it 'background.png'.
 
-Let's create a file styles.css as follow:
+Then we can pick and align it:
 
 body
 {
-   background-image:url('/static/background.jpg');
+   background-image:url('/static/background.png');
    background-repeat: repeat;
    background-position: top center;
    background-attachment: fixed;
 }   
 Font Customization Example
 
-This CSS example shows how to customize the Font of the application. Upload a custom font through the "Load Custom File button"; let's suppose 'antani.ttf'.
+This CSS example shows how to customize the font of the application. Upload a custom font through the "Load Custom File button"; let's choose 'antani.ttf'.
 
-Let's create a file styles.css as follow:
+Point to the file in styles.css as follows:
 
 @font-face {
     font-family: 'Antani';
@@ -77,99 +75,99 @@ body {
 }
 Translations Customization
 
-On page http://[...]/#/admin/content, on tab "Translation Customization" it's possible to enable current translation languages and eventually load custom translations.
+On the page http://[…]/#/admin/content, on the tab "Translation Customization", it's possible to enable current translation languages and eventually load custom translations.
 
-GlobaLeaks is currently translated in a lot of languages thanks to the Transifex community Effort.
+GlobaLeaks is currently translated into many languages thanks to community effort. https://www.transifex.com/otf/globaleaks/dashboard/
 
-Translations are added to the Globaleaks package upon a new language reach more than 50% of translated sentences; if your language is missing, the best you can do is to help translating it!
+Translations are added to the Globaleaks package upon a new language reaching a coverage of more than 50% of translated sentences; if your language is missing, the best you can do is to help translating it.
 
 CSS #BodyDefault class extensions
 
-The application also attaches the following CSS classes to the #bodyDefault <div> so that you can customize pages based on the applications location and state. For example, when a user navigates from /#/submission to /#/login the class .ext-public will be removed from #BodyDefault and .ext-login will be added.
+The application also attaches the following CSS classes to the #bodyDefault <div> so that you can customize pages based on the application's location and state. For example, when a user navigates from /#/submission to /#/login the class .ext-public will be removed from #BodyDefault and .ext-login will be added.
 
 Class	Description
-.ext-public	appended on every page intended for Whistleblower's. These are the public pages.
-.ext-embed	always appended to #bodyDefault if the url of page includes ?embedded=true
-.ext-authenticated	appended to every page when a user is authenticated. This field may be deprecated.
+.ext-public	is appended to every page intended for Whistleblowers. These are the public pages.
+.ext-embed is always appended to #bodyDefault if the URL of page includes ?embedded=true
+.ext-authenticated is appended to every page when a user is authenticated. This field may be deprecated.
 Refer to this file for an example on how to use these classes.
 
 Translated links useful for landing pages
 
-Globaleaks offers the possibility to provide users links automatically localized in a chosen language in order to avoid users to switch the language manually. For every link it would be possible to provide localized links by simply appending the short code of the language to the url. For example to provide a internationalized landing page for http://[...]/#/admin/submission) it would be possible to use:
+GlobaLeaks offers the possibility to provide users links automatically localized in a chosen language, in order to avoid users having to switch between languages manually. For every link it would be possible to provide localized links by simply appending the short code of the language to the URL. For example to provide a internationalized landing page for http://[…]/#/admin/submission) it would be possible to use:
 
-http://[...]/#/admin/submission/it for Italian page
-http://[...]/#/admin/submission/ru for Russian page
-For the full list of the languages code available please refer to the application page http://[...]/#/admin/content, on tab "Translation Customization".
+http://[…]/#/admin/submission/it for an Italian page
+http://[…]/#/admin/submission/ru for the Russian equivalent
+For the full list of available languages codes, please refer to the application page http://[…]/#/admin/content, on the "Translation Customization" tab.
 
 Notification Templates Customization
 
-On page http://[...]/#/admin/content, on tabs "Plaintext Notification Templates" and "Encrypted Notification Templates" it's possible to configure mail templates for plaintext and encrypted notification respectively.
+On page http://[…]/#/admin/content, on the tabs called "Plaintext Notification Templates" and "Encrypted Notification Templates" it's possible to configure email templates for plaintext and encrypted notification respectively.
 
 For example, by defining a notification template email with:
 
-"Hello %ReceiverName%, you got a new Tip for you in %ContextName%"
-the receiver would get an email with %ReceiverName% replaced with his configured name, and %ContextName% with the name of the Context of the submission.
+"Hello %ReceiverName%, there is a new submission for you in %ContextName%".
+The recipient would get an email with %ReceiverName% replaced with their configured name, and %ContextName% with the name of the context of the submission in question.
 
-The notification events are four (New Tip, new Comment, new Message or new File uploaded) and for each one is possible to configure a specific mail template. In addition it's also possible to configure the template for a txt file that will be included in all collection archives downloaded through the platform.
+There are four notification events (New submission, new comment, new message or new file uploaded) and for each one it is possible to configure a specific email template. In addition it's also possible to configure the template for a .txt file that will be included in all collection archives downloaded through the platform.
 
-For each specific template are available some specific keyword; for example, encrypted version of the templates allows more keywords.
+For each specific template there are some specific keywords available; for example, the encrypted version of a template allows more keywords.
 
 The keyword available in encrypted template could contain sensitive data
 
-To use a keyword, just write them with the percentage signs.
+To use a keyword, add percentage signs around it.
 
-The following is the list of all the availalbe keywords
+The following is the list of all availalbe keywords
 
 Shared keywords available in all notification templates
 
-Notification: Encrypted or Plaintext mail about a new Tip, File, Message, Comment.
+Notification: Encrypted or plaintext email about a new submission, file, message or comment.
 
-%EventTime%: Pretty timedate based with english Month name (no localization available)
+%EventTime%: Pretty timestamp with the name of the month in English (no localization available)
 %NodeName%: The name of your node
-%HiddenService%: The URL of the hidden service configured
-%PublicSite%: The URL of the URL that can be reach from outside
-%ReceiverName%: The name of the Receiver
-%ContextName%: The name of the context related (every Tip is always under one and only one context)
-Tip event
+%HiddenService%: The URL of the configured hidden service
+%PublicSite%: The URL of the project reachable from the outside
+%ReceiverName%: The name of the recipient
+%ContextName%: The name of the context related (every submission is always under one and only one context)
+Submission event
 
-%TipTorURL%: URL of the hidden service + the Tip ID, usable by the receiver (prior authentication) to access the tip.
-%TipT2WURL%: This URL use the Public Website (default a tor2web extenal website) usable to reach the Tip. This is actually available only if the Node is configured in order to permit Receivers access via Tor2Web (default is deny, check in admin advanced settings -> tor2web accessibility)
-%TipNum%: an "unique" number of three digit assigned to every Tip. Every Receiver has a different %TipNum% for evert Tip. Shall be used to be put in the mail subject, in order to follow easily the
-Encrypted Tip Event
+%TipTorURL%: URL of the hidden service + the submission ID, usable by the recipient (prior authentication) to access the submission.
+%TipT2WURL%: This URL used for the public website (by default a tor2web extenal website) for use in reaching the submission. This is actually available only if the node is configured in to permit recipients access via Tor2Web (denied by default. Check Admin panel, Advanced Settings -> tor2web Accessibility)
+%TipNum%: a "unique" three digit number assigned to every submission. Every recipient has a different %TipNum% for every submission. Used to supply an email subject, in order to easily follow the
+encrypted submission event.
 
 %TipFields%: The dump of the submission fields! This is sensitive, check the security consideration here: https://docs.google.com/a/apps.globaleaks.org/document/d/1niYFyEar1FUmStC03OidYAIfVJf18ErUFwSWCmWBhcA/edit#heading=h.la9gjvhg62sq
 Comment event
 
-%CommentSource%: is "Whistleblower" or "Receiver", just is useful to specify which is the source of the comment.
-all the Tip event keywords
-Encrypted Comment Event
+%CommentSource%: is "Whistleblower" or "Recipient", useful for specifying which is the source of the comment.
+all the submission event keywords
+Encrypted comment event
 
-%CommentContent%: This contain the entire comments content, can be sensitive, can became from either whistleblower and receiver.
+%CommentContent%: This contains all comments, and can be sensitive, can be from either a whistleblower and a recipient.
 File event
 
 %FileName%: The name of the file
-%FileType%: the content type of the file
+%FileType%: The content type of the file
 %FileSize%: The size expressed in bytes
-all the Tip event keywords
-Encrypted File event
+all the submission event keywords
+Encrypted file event
 
-(Not yet implemented, %FileDescription%, would contain the description of the file provided by the WB)
+(Not yet implemented, %FileDescription%, would contain the description of the file provided by the whistleblower)
 Message event
 
-%MessageSource%: is a fixed string, at the moment. just 'whistleblower' can be, because Message are direct between one Receiver and the WB, and only Receiver can get Notification,
-all the Tip event keywords
+%MessageSource%: A fixed string at the moment, with sole option of being: 'whistleblower', because messages are sent directly between one receipient and the whistleblower, and only recipients can get notifications,
+all the submission event keywords
 Encrypted Message event
 
-%MessageContent%: This contain the entire messages content, can be sensitive, became directly from the whistleblower.
+%MessageContent%: This contains all messages, and can be sensitive, as it comes directly from the whistleblower.
 Non notification template
 
-When a receiver download the full collection of the available files (in .zip format) a file named DESCRIPTION.txt is append to the archive.
+When a recipient downloads the full collection of the available files (in .zip format) a file named DESCRIPTION.txt is added to the archive.
 
-This file can be customized in content and has its own set of Keyword (beside the Shared Keywork above)
+This file can be have it's content customized and has its own set of keywords (beside the Shared Keywords above)
 
 Collection Archive Description
 
-%FileList%: list of the file download
-%FilesNumber%: number of the files
-%TotalSize%: total size of the files
+%FileList%: List of the files downloaded
+%FilesNumber%: Number of the files
+%TotalSize%: Total size of the files
 
