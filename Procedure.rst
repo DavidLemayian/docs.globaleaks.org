@@ -12,13 +12,12 @@ The most important aspect of your whistleblowing initiative is the definition of
 Whistleblowing procedure substantially defines:
 
 
--which kind of info you are collecting from whistleblowers
--and which people will take charge of treating those collected info. 
+* which kind of info you are collecting from whistleblowers
+* and which people will take charge of treating those collected info. 
 
 
 GlobaLeaks has been designed and implemented around those very simple concepts.
 Those, in fact, are needed to set up the follwing aspects of your GlobaLeaks installation:
-
 
 * **Contexts** (link to documentation section on Context Configuration)
 * **Questionnaires** (link to documentation section on Questionnaire Configuration)
@@ -31,7 +30,6 @@ Context
 A **Context** is the area, category, or topic concerned by the submissions given by the whistleblower through the platform.
 
 Examples of possible Contexts are:
-
 
 * Corruption in a local municipality
 * Environmental pollution in a specific city
@@ -46,8 +44,10 @@ Each Context can have a differentiated set of Receivers that will receive the su
 Each Context is linked with a Questionnaire, which is composed of Submission Fields
 
 Questionnaires and Submission Fields
-Submission fields represent the information that the Whistleblower is asked to provide while applying for a submission. They represent one of the most important configuration aspects of GlobaLeaks and are the individual components of Questionnaires.
-To improve the flexibility of the platform, questionnaires are organized in Steps.
+------------------------------------
+
+**Submission fields** represent the information that the Whistleblower is asked to provide while applying for a submission. They are one of the most important configuration aspects of GlobaLeaks and are the individual components of Questionnaires.
+To improve the flexibility of the platform, questionnaires are organized in **Steps**.
 
 It is very important to ask the Whistleblower information that will be useful to the Recipient(s) when assessing and verifying their submission. Think of common questions that may arise when you are dealing with a submission on that specific Context.
 
