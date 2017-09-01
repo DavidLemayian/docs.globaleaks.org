@@ -60,38 +60,7 @@ The submission fields are different for each Context of use, so that they can be
 To simplify the design of questionnaires, steps, and submission fields it is very useful to fill in all the submission fields that you would like to configure for your initiative in the sample form below:
 
 
-+----------------+-------------------+----------------+------------------+----------------+
-|                |                   |                |                  |                |
-|   Context      |     Question      | Selection type |    Choice        |    Mandatory   |
-|                |                   |                |                  |                |
-+================+===================+================+==================+================+
-|                |                   |                |  Yes             |                |
-|   Corruption   | Do you know the   |   Select       |  No              |      Yes       |
-|                | corruptor?        |                |  I know someone  |                |
-|                |                   |                | who know them    |                |
-+----------------+-------------------+----------------+------------------+----------------+
-|                |                   |                |                  |                |
-|   Corruption   | Did you in any way|   Select       |  Yes             |      Yes       |
-|                | participate in    |                |  No              |                |
-|                | this event?       |                |                  |                |
-|                |                   |                |                  |                |
-+----------------+-------------------+----------------+------------------+----------------+
-|                |                   |                |                  |                |
-|   Corruption   | When did this     |   Date         | Select dates     |      Yes       |
-|                | happen?           |                |                  |                |
-|                |                   |                |                  |                |
-+----------------+-------------------+----------------+------------------+----------------+
-|                |                   |                |                  |                |
-|   Corruption   | Do you have any   |                |                  |                |
-|                | documented proof  |  Free text     |  Free text       |      Yes       |
-|                | to confirm this?  |                |                  |                |
-|                |                   |                |                  |                |
-+----------------+-------------------+----------------+------------------+----------------+
-|                |                   |                |                  |                |
-|   Corruption   |  ..............   |   ......       |  ..........      |      ...       |
-|                |                   |                |                  |                |
-+----------------+-------------------+----------------+------------------+----------------+
-
+.. image:: WhistleblowingProcedureTable1.png
 
 
 .. ATTENTION::
