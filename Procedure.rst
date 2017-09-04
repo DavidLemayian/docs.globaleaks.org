@@ -78,9 +78,31 @@ The Selection Type can be any of the following elements that will get displayed 
    
    The Recipients should frequently report on how to improve the effectiveness of the Whistleblowers’ submissions fields for      specific Contexts by asking for new or more precise sets of fields.
    
-   What are the additional questions you are commonly asking whistleblowers which submit a tip in a certain context? Would it      have saved the Recipient time, If you had asked those questions in the submission phase? If the answer is “yes”, then such      questions should be in the submission fields.
+   What are the additional questions you are commonly asking whistleblowers which submit a tip in a certain context? Would it    have saved the Recipient time, If you had asked those questions in the submission phase? If the answer is “yes”, then such    questions should be in the submission fields.
+
+
+Recipients
+----------
+
+The *Recipients* are the people handling fact-checking and publishing of the received submissions.
+
+The chosen policy about Recipient disclosure determines the amount of Recipients’ details to be configured, as shown in the submission page.
+
+
+Recipient notification
+......................
+
+Recipients, by default, receive email notifications in the following cases:
+
+* A new submission has been sent by a whistleblower.
+* A new file has been uploaded on an existing submission.
+* A new comment has been made on an existing submission.
+
+
+Recipients, if a PGP Key is configured, will receive the notification encrypted by email and can download the submission files encrypted.
+
 
 
 .. ATTENTION::
-  To be Completed  
+   To be Completed  
 
