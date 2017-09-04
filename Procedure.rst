@@ -62,6 +62,26 @@ To simplify the design of questionnaires, steps, and submission fields it is ver
 
 .. image:: WhistleblowingProcedureTable1.png
 
+The Selection Type can be any of the following elements that will get displayed to the whistleblower: 
+
+* Text
+* Radio Button
+* Drop Menu (select)
+* Multi Select
+* Toggle (checkbox)
+* Checkboxes
+* Date, Number,  URL, Phone, Email, Heading
+
+
+.. hint:: Useful Tips on Submission Fields Management
+
+The organization running the Whistleblowing Initiative should frequently update their Submission fields as their Recipients learn through experience what information is most crucial for fact-checking submitted materials.
+
+The Recipients should frequently report on how to improve the effectiveness of the Whistleblowers’ submissions fields for specific Contexts by asking for new or more precise sets of fields.
+
+What are the additional questions you are commonly asking whistleblowers which submit a tip in a certain context? Would it have saved the Recipient time, If you had asked those questions in the submission phase? If the answer is “yes”, then such questions should be in the submission fields.
+
+
 
 .. ATTENTION::
   To be Completed  
