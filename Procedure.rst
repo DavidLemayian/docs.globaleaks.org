@@ -73,7 +73,8 @@ The Selection Type can be any of the following elements that will get displayed 
 * Date, Number,  URL, Phone, Email, Heading
 
 
-.. hint:: Useful Tips on Submission Fields Management
+.. hint:: 
+   **Useful Tips on Submission Fields Management**
    The organization running the Whistleblowing Initiative should frequently update their Submission fields as their Recipients    learn through experience what information is most crucial for fact-checking submitted materials.
    
    The Recipients should frequently report on how to improve the effectiveness of the Whistleblowers’ submissions fields for      specific Contexts by asking for new or more precise sets of fields.
@@ -103,7 +104,8 @@ Recipients, by default, receive email notifications in the following cases:
 Recipients, if a PGP Key is configured, will receive the notification encrypted by email and can download the submission files encrypted.
 
 
-.. Important:: Recipients' privacy
+.. Important:: 
+   **Recipients' privacy**
    One important decision to be made while setting up a Whistleblowing site is whether the initiatives would like to provide      the Whistleblower the ability to directly contact one or more specific recipients for their confidential submission.          This involves the Recipients’ identity disclosure and is applicable only in low risk scenarios. 
    
    For example, a media outlet may have a Whistleblowing site with a publicly available list of Recipients (i.e. select          journalists), so that the Whistleblower can submit to the journalists they feel are most trusted and appropriate for that      submission.
