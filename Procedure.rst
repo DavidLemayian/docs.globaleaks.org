@@ -2,11 +2,6 @@
 Whistleblowing Platform Set Up Procedure
 ========================================
 
-
-.. ATTENTION::
-  This Document is in a work in progress state
-  
-
 The most important aspect of your whistleblowing initiative is the definition of the Whistleblowing procedure.
 
 Whistleblowing procedure substantially defines:
@@ -75,6 +70,7 @@ The Selection Type can be any of the following elements that will get displayed 
 
 .. Hint:: 
    **Useful Tips on Submission Fields Management**
+   
    The organization running the Whistleblowing Initiative should frequently update their Submission fields as their Recipients    learn through experience what information is most crucial for fact-checking submitted materials.
    
    The Recipients should frequently report on how to improve the effectiveness of the Whistleblowers’ submissions fields for      specific Contexts by asking for new or more precise sets of fields.
@@ -106,6 +102,7 @@ Recipients, if a PGP Key is configured, will receive the notification encrypted 
 
 .. Important:: 
    **Recipients' privacy**
+   
    One important decision to be made while setting up a Whistleblowing site is whether the initiatives would like to provide      the Whistleblower the ability to directly contact one or more specific recipients for their confidential submission.          This involves the Recipients’ identity disclosure and is applicable only in low risk scenarios. 
    
    For example, a media outlet may have a Whistleblowing site with a publicly available list of Recipients (i.e. select          journalists), so that the Whistleblower can submit to the journalists they feel are most trusted and appropriate for that      submission.
