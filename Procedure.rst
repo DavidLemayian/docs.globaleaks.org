@@ -78,13 +78,14 @@ The Selection Type can be any of the following elements that will get displayed 
    
    The Recipients should frequently report on how to improve the effectiveness of the Whistleblowers’ submissions fields for      specific Contexts by asking for new or more precise sets of fields.
    
-   What are the additional questions you are commonly asking whistleblowers which submit a tip in a certain context? Would it    have saved the Recipient time, If you had asked those questions in the submission phase? If the answer is “yes”, then such    questions should be in the submission fields.
+   What are the additional questions you are commonly asking whistleblowers which submit a tip in a certain context? Would it    have saved the Recipient time, If you had asked those questions in the submission phase? If the answer is “yes”, then such    questions should be in the submission fields.   
+   
 
 
 Recipients
 ----------
 
-The *Recipients* are the people handling fact-checking and publishing of the received submissions.
+The **Recipients** are the people handling fact-checking and publishing of the received submissions.
 
 The chosen policy about Recipient disclosure determines the amount of Recipients’ details to be configured, as shown in the submission page.
 
@@ -100,6 +101,18 @@ Recipients, by default, receive email notifications in the following cases:
 
 
 Recipients, if a PGP Key is configured, will receive the notification encrypted by email and can download the submission files encrypted.
+
+
+.. Important:: Recipients' privacy
+   One important decision to be made while setting up a Whistleblowing site is whether the initiatives would like to provide      the Whistleblower the ability to directly contact one or more specific recipients for their confidential submission.          This involves the Recipients’ identity disclosure and is applicable only in low risk scenarios. 
+   
+   For example, a media outlet may have a Whistleblowing site with a publicly available list of Recipients (i.e. select          journalists), so that the Whistleblower can submit to the journalists they feel are most trusted and appropriate for that      submission.
+   However, an activism Whistleblowing initiative operating under a dictatorship cannot risk publicly exposing their list of
+   Recipients, so they must remain anonymous to protect against government retaliation.
+   The Recipients’ visibility applies to the context, and so each context can have a different Recipient privacy. In order to    set up this parameter, please complete the proper form in the Context section
+   
+
+In order to ease the Recipients' configuration, it is usefull to fill the following table with pertinent data:
 
 
 
