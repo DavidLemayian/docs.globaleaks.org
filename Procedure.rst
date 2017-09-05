@@ -116,8 +116,6 @@ Recipients, if a PGP Key is configured, will receive the notification encrypted 
 
 In order to ease the Recipients' configuration, it is usefull to fill the following table with pertinent data:
 
+.. image:: Recipients_table.png
 
-
-.. ATTENTION::
-   To be Completed  
 
