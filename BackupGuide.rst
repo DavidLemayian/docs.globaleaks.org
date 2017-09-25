@@ -6,7 +6,9 @@ The following commands are required in order to create a backup of GlobaLeaks:
 
 .. code:: bash
 date=`date +"%Y-%m-%d"`
+
 version=`dpkg -l | awk '$2=="globaleaks" { print $3 }'`
+
 tar zcvfp /tmp/globaleaks-backup-$date-$version.tar.gz /var/globaleaks/ /etc/default/globaleaks
 
 
