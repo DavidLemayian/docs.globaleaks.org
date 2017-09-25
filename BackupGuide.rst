@@ -4,7 +4,7 @@ Backup Guide
 
 The following commands are required in order to create a backup of GlobaLeaks:
 
-.. code:: bash
+.. code:: 
 date=`date +"%Y-%m-%d"`
 
 version=`dpkg -l | awk '$2=="globaleaks" { print $3 }'`
