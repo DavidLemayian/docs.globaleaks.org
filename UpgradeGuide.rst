@@ -69,21 +69,40 @@ Note that this guide assumes you can still connect to the service over Tor.
 * Add the hostname that will appear on the SSL certificate to Network Settings > Hostname
 * Disable Network application sand boxing under Network Settings
 * Stop GlobaLeaks with:
+  
   .. code::
+     
      service globaleaks stop
      
 * Remove Tor2Web from the system with:
+  
   .. code:: 
+     
      apt-get remove tor2web
      
 * Start GlobaLeaks with:
-  .. code:: 
+  
+  .. code::
+     
      service globaleaks start
 
-* Check iptables is disabled with: iptables --list
-Connect through Tor and upload your private key, certificate, chain file to Network Settings > HTTPS Settings
-Click enable in Network Settings > HTTPS Settings
-Verify that the service is listening on port 80 with: netstat -tulpen If the output does not look like the following you may need to remove the following line to /etc/default/globaleaks and restart the service.
+* Check iptables is disabled with:
+  
+  .. code::
+     
+     iptables --list
+
+* Connect through Tor and upload your private key, certificate, chain file to Network Settings > HTTPS Settings
+
+* Click enable in Network Settings > HTTPS Settings
+
+* Verify that the service is listening on port 80 with:
+  
+  .. code::
+   
+     netstat -tulpen 
+  
+  If the output does not look like the following you may need to remove the following line to /etc/default/globaleaks and restart the service.
 Netstat output
 
 ubuntu@ip-172-1-0-2:~$ netstat -tulpen
