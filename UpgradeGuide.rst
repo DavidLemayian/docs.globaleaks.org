@@ -103,17 +103,22 @@ Note that this guide assumes you can still connect to the service over Tor.
      netstat -tulpen 
   
   If the output does not look like the following you may need to remove the following line to /etc/default/globaleaks and restart the service.
-Netstat output
-
-ubuntu@ip-172-1-0-2:~$ netstat -tulpen
-Active Internet connections (only servers)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode       PID/Program name
-tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      0          34391       python               
-tcp        0      0 127.0.0.1:9040          0.0.0.0:*               LISTEN      0          31936       tor               
-tcp        0      0 0.0.0.0:8082            0.0.0.0:*               LISTEN      0          31592       python                              
-tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN      0          30134       tor          
-Line to add to /etc/default/globaleaks
-
-LISTENING_IP=0.0.0.0
-Try to visit the URL displayed in Network Settings > HTTPS Settings with a normal web browser.
-If the steps worked subprocesses managed by GlobaLeaks should be listening publicly on port 443. You can test the connect against an external service like ssl labs to verify the quality of the session.
+  
+  Netstat output
+  
+  .. code:: 
+     
+     ubuntu@ip-172-1-0-2:~$ netstat -tulpen
+     Active Internet connections (only servers)
+     Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode       PID/Program name
+     tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      0          34391       python         
+     tcp        0      0 127.0.0.1:9040          0.0.0.0:*               LISTEN      0          31936       tor            
+     tcp        0      0 0.0.0.0:8082            0.0.0.0:*               LISTEN      0          31592       python         
+     tcp        0      0 127.0.0.1:9050          0.0.0.0:*               LISTEN      0          30134       tor          
+  
+  Line to add to /etc/default/globaleaks
+  
+  LISTENING_IP=0.0.0.0
+  
+  Try to visit the URL displayed in Network Settings > HTTPS Settings with a normal web browser.
+  If the steps worked subprocesses managed by GlobaLeaks should be listening publicly on port 443. You can test the connect against an external service like ssl labs to verify the quality of the session.
