@@ -2,6 +2,10 @@
 Upgrade guide
 ========================
 
+.. warning::
+   This section is currently under revision.
+   
+
 To safely upgrade a GlobaLeaks installation please proceed with a backup of your setup by following the Backup Guide: https://globaleaks.readthedocs.io/en/latest/BackupGuide.html
 
 This is necessary so that if something goes wrong and you need to rollback, you will be able to just uninstall the current package, then install the same version of globaleaks that was previously installed and working.
@@ -61,13 +65,22 @@ Version 2.66 of GlobaLeaks introduced HTTPS functionality directly controllable 
 
 Note that this guide assumes you can still connect to the service over Tor.
 
-Update to a version later than 2.66
-Add the hostname that will appear on the SSL certificate to Network Settings > Hostname
-Disable Network application sand boxing under Network Settings
-Stop GlobaLeaks with: service globaleaks stop
-Remove Tor2Web from the system with: apt-get remove tor2web
-Start GlobaLeaks with: service globaleaks start
-Check iptables is disabled with: iptables --list
+* Update to a version later than 2.66
+* Add the hostname that will appear on the SSL certificate to Network Settings > Hostname
+* Disable Network application sand boxing under Network Settings
+* Stop GlobaLeaks with:
+  .. code::
+     service globaleaks stop
+     
+* Remove Tor2Web from the system with:
+  .. code:: 
+     apt-get remove tor2web
+     
+* Start GlobaLeaks with:
+  .. code:: 
+     service globaleaks start
+
+* Check iptables is disabled with: iptables --list
 Connect through Tor and upload your private key, certificate, chain file to Network Settings > HTTPS Settings
 Click enable in Network Settings > HTTPS Settings
 Verify that the service is listening on port 80 with: netstat -tulpen If the output does not look like the following you may need to remove the following line to /etc/default/globaleaks and restart the service.
