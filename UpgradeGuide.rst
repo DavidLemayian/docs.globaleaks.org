@@ -1,10 +1,6 @@
 ========================
 Upgrade guide
-========================
-
-.. warning::
-   This section is currently under revision.
-   
+========================   
 
 To safely upgrade a GlobaLeaks installation please proceed with a backup of your setup by following the Backup Guide: https://globaleaks.readthedocs.io/en/latest/BackupGuide.html
 
