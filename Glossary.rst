@@ -6,9 +6,6 @@ This is a list of jargon that is used inside of the GlobaLeaks software. Here we
    GlobaLeaks
 	Our project, a FLOSS, security focused and flexible whistleblowing platform.
 
-   GLAPI
-	REST interface defined for the communication with a GlobaLeaks Node.
-
    Node (or GlobaLeaks Node)
 	A system running the backend software
 
@@ -37,5 +34,5 @@ This is a list of jargon that is used inside of the GlobaLeaks software. Here we
 	The action performed by the Whistleblower to submit a Tip to the GlobaLeaks Node. This action is performed by the Whisleblower in respect to the Context requirement.
 
    Notification
-	Method used to notify a Receiver that a new Tip or an update of an existing Tip is available. At the moment only E-Mail is the only notification supported, and Admin can configured with a template system the email content.
+	Method used to notify a Recipient that a new Tip or an update of an existing Tip is available. At the moment, email is the only notification supported, and Admin can configure with a template system the email content.
 
