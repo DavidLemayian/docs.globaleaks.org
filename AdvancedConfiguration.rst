@@ -2,9 +2,6 @@
 Advanced Configuration Guide
 ============================
 
-https://github.com/globaleaks/GlobaLeaks/wiki/Advanced-customization-guide
-last edit 2014
-
 The Advanced Customization Guide enables you to customize every aspect of the features in the GlobaLeaks application, like for example:
 
 Tweak every setting;
