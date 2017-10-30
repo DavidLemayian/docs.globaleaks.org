@@ -1,8 +1,11 @@
+=================
 Integration Guide
+=================
 
-This guide illustrates the ways in which GlobaLeaks can be integrated into an existing website.
+This guide illustrates how GlobaLeaks can be integrated into an existing website.
 
 Integration Architecture
+
 
 Usually a media organization or an NGO wants to make the platform available through an existing HTTPS website. A key advantage to integrating GlobaLeaks into an HTTPS website is that it lets organizational partners present a shared, unified, and collaborative initiative to the public.
 
