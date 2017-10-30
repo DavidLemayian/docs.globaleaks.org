@@ -5,11 +5,12 @@ Integration Guide
 This guide illustrates how GlobaLeaks can be integrated into an existing website.
 
 Integration Architecture
+------------------------
 
+Usually, a media organization or an NGO wants to make the platform available through an existing HTTPS website. 
+A key advantage of integrating GlobaLeaks into an HTTPS website is that it allows organizational partners present the initiative to the public in a shared, unified, and collaborative way.
 
-Usually a media organization or an NGO wants to make the platform available through an existing HTTPS website. A key advantage to integrating GlobaLeaks into an HTTPS website is that it lets organizational partners present a shared, unified, and collaborative initiative to the public.
-
-When using an existing HTTPS website with GlobaLeaks, we recommend that the GlobaLeaks platform and Tor2Web – the service which makes globaleaks accessible – be setup as a reverse proxy on a path like /globaleaks. Using a reverse proxy over HTTPS through the existing website improves the safety of whistleblowers because it lets them blend in with other users who are just visiting the website. This gives a whistleblower plausible deniability at the network level as well at the human level.
+When using an existing HTTPS website with GlobaLeaks, we recommend that the GlobaLeaks platform and Tor2Web – the service which makes GlobaLeaks accessible – be setup as a reverse proxy on a path like /globaleaks. Using a reverse proxy over HTTPS through the existing website improves the safety of whistleblowers because it lets them blend in with other users who are just visiting the website. This gives a whistleblower **plausible deniability** at the network level as well at the human level.
 
 The following diagram illustrates the network architecture of the typical setup:
 
@@ -21,14 +22,19 @@ Additional guidelines on this topic are available at:
 
 https://github.com/globaleaks/GlobaLeaks/issues/1128
 https://github.com/globaleaks/GlobaLeaks/issues/1130)
-NOTE: If you need to configure the subpath where GlobaLeaks handler answers because you are using a limited reverse-proxy (es: Cisco ACE 4700), then you need to configure it as documented on Reverse Proxy Hack
 
-The Main Components to Integrate
+.. HINT::
+   If you need to configure the subpath where GlobaLeaks handler answers because you are using a limited reverse-proxy (es: Cisco ACE 4700), then you need to configure it as documented on Reverse Proxy Hack.
+
+
+Main Components to Integrate
+----------------------------
 
 There are two main components that need to be integrated into an initiative's website. They are:
 
-The Submission interface (this lets a whistleblower make a new submission): /#/submission
-The Receipt interface (this lets a whistleblower interact with an existing submission): /#/receipt
+The **Submission interface** (this lets a whistleblower make a new submission): /#/submission
+The **Receipt interface** (this lets a whistleblower interact with an existing submission): /#/receipt
+
 These are the main examples which are typically required. In general though, every URL in GlobaLeaks can be embedded on the host's website. If the URL Parameter ?embedded=true is appended to a GlobaLeaks URL, the page's header and footer is removed and the page becomes embeddable within another page.
 
 Integration modes:
