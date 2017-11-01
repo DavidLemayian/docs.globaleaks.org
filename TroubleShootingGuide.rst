@@ -30,15 +30,18 @@ Here is example usage:
   
   gl-reset-password --file /var/globaleaks/db/glbackend.db
 
+  Editing DB at path /var/globaleaks/db/glbackend.db
+  
+  =================================
+  ||   Your new admin password   ||
+  =================================
+       Username: admin
+       Password: 7cJjfDJBMwp3JnBG
+  =================================
 
-Editing DB at path /var/globaleaks/db/glbackend.db
-=================================
-||   Your new admin password   ||
-=================================
-     Username: admin
-     Password: 7cJjfDJBMwp3JnBG
-=================================
+
 Installation issue
+------------------
 
 If you encounter an installation issue and you are not able to successfully access GlobaLeaks web interface, you should always:
 
