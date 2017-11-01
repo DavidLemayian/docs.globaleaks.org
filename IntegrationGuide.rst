@@ -33,8 +33,9 @@ GlobaLeaks provides a specific Javascript plugin to be used for integration. The
 The plugin can be included on a website with a script tag like:
 
 ::
-  <script type="text/javascript" src="https://PublicWebsite/globaleaks/js/plugin.js"></script>
   
+  <script type="text/javascript" src="https://PublicWebsite/globaleaks/js/plugin.js"></script>
+
 The plugin safely loads the platform as a widget by calling the function StartGlobaLeaks().
 This function can be used to embed specific platform resources. In the following example the submission interface is loaded when the link is clicked.
 
@@ -54,14 +55,18 @@ Using iframes to integrate GlobaLeaks into a website is not recommended because 
   
   <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/submission"></iframe>
 
+
 **Receipt Interface**
 
-<iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/receipt"></iframe>
+::
+  
+  <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/receipt"></iframe>
 
 
 GlobaLeaks Parameters
 ---------------------
 There are several URL parameters that a web developer can use to change the GlobaLeaks platform's behaviour when integrating the platform into a website.
+
 
 Language Selection
 ..................
@@ -69,21 +74,33 @@ Language Selection
 The lang URL parameter pre-selects the language used in the interface. The example below loads the submission interface in English.
 
 ::
+  
   https://PublicWebsite/globaleaks/#/submission?lang=en
+
 
 Context Selection
 .................
 
 The context URL parameter selects a specific submission context to load by passing a UUID. For example:
 
-https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d
+::
+  
+  https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d
+
+
 Note that a context's UUIDs can be found on the platform in the context configuration section of the administration interface.
 
+
 Recipients Selection
+....................
 
 The receivers URL parameter selects specific recipients to the submission by passing a list of UUIDs. For example:
 
-https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d&receivers=["06cb60d2-13a4-4aa3-926f-85b64f12239d","03cb60d2-13a4-43a3-926f-85b64f12232z"]
+::
+  
+  https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d&receivers=["06cb60d2-13a4-4aa3-926f-85b64f12239d","03cb60d2-13a4-43a3-926f-85b64f12232z"]
+
+
 This configuration requires that the context parameter is set and the recipients are selected from among those configured for the specified context.
 
 The UUIDs of recipients can be found on the platform in configuration section for each context.
