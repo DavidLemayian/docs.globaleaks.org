@@ -39,6 +39,7 @@ The plugin safely loads the platform as a widget by calling the function StartGl
 This function can be used to embed specific platform resources. In the following example the submission interface is loaded when the link is clicked.
 
 ::
+  
   <a href="javascript:startGlobaLeaks('https://PublicWebsite/globaleaks/#/submission')" style="text-decoration: none;">Blow the Whistle!</a>
 
 
@@ -49,7 +50,8 @@ Using iframes to integrate GlobaLeaks into a website is not recommended because 
 
 **Submission interface**
 
-:: 
+::
+  
   <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/submission"></iframe>
 
 **Receipt Interface**
