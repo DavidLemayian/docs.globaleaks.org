@@ -2,6 +2,10 @@
 Troubleshooting guide
 =====================
 
+.. ALERT::
+  This section is work in progress.
+  
+
 Enhance your administration skill, to better investigate issues, and send more detailed reports about them.
 
 
@@ -45,31 +49,39 @@ Installation issue
 
 If you encounter an installation issue and you are not able to successfully access GlobaLeaks web interface, you should always:
 
-Be sure to strictly follow the Installation Guide for installation
-Be sure to satisfy the Technical Requirements for hardware and operating system version.
-Having tried that, write us to support@logioshermes.org or come to irc.oftc.net #globaleaks.
+- Be sure to strictly follow the Installation Guide for installation
+- Be sure to satisfy the Technical Requirements for hardware and operating system version.
+- Having tried that without results, please go to our support forum: https://forum.globaleaks.org/c/support/glinstallation
+
 
 Sanity Checks
-
+-------------
 Depending on your setup. There are a few things that are usually the first things to check to see if GlobaLeaks is working.
 
-Is the service running?
+- Is the service running?
 
-service globaleaks status
+::
+  
+  service globaleaks status
 
-Is the service responding on the loopback interface?
+- Is the service responding on the loopback interface?
 
-curl -vvv localhost:8082
+:: 
+  
+  curl -vvv localhost:8082
 
-Is the service listening on external interfaces? Is Tor2Web service listening on 443?
+- Is the service listening on external interfaces? Is Tor2Web service listening on 443?
 
-netstat -tap
+::
+  
+  netstat -tap
 
-Are exceptions being generated?
+- Are exceptions being generated?
 
-less /var/globleaks/logs/globaleaks.log
+::
+  less /var/globleaks/logs/globaleaks.log
 
-Log files
+- Log files
 
 There are a few useful logs and corresponding log files when GlobaLeaks is installed.
 
@@ -79,11 +91,14 @@ GlobaLeaks process:
 
 The verbosity is configurable at startup with the following options: --loglevel DEBUG --loglevel INFO --loglevel ERROR --loglevel CRITICAL (default option) -o, --orm-debug enable ORM debugging (AVAILABLE ONLY IN DEVEL MODE) -j, --request-log enable request/response logging (AVAILABLE ONLY IN
 
+.. NOTE::
+
 Privacy Note: some log entries of the orm-debug, request-log and the DEBUG and INFO level will contain information about users. These options should not be used in production.
 
 Tor: /var/log/tor/log Iptables: /var/log/syslog AppArmor: /var/log/kern.log
 
-Error reporting (via Email)
+
+- Error reporting (via Email)
 
 GlobaLeaks supports a method to catch all Python/Twisted language exceptions. These unexpected and unhandled exceptions are software bugs, which are sent via email to either the system administrator's address or globaleaks-stackexception@lists.globaleaks.org by default.
 
