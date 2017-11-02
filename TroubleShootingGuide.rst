@@ -165,26 +165,53 @@ User Interface troubleshooting
 
 When reporting an issue with the User Interface be sure to provide the following elements:
 
+
 Platform details
+................
 
-The browser version
+- The **browser version**
 
-The operating system version you are using
+- The **operating system version** you are using
+
 
 Output of developer console
+...........................
 
 You should include the output (if any) of the developer console when the bug occurs. Be sure to open the developer console and then reproduce the bug.
 
-In Chrome this can be done with: Windows: CTRL-SHIFT-J Mac OS X: ALT-⌘-J
+In **Chrome** this can be done with:
 
-In Firefox this can be done with: Windows: CTRL-SHIFT-K Mac OS X: ALT-⌘-K
+- Windows: 
+  ::
+    
+    CTRL-SHIFT-J
+    
+- Mac OS X: 
+  ::
+    
+    ALT-⌘-J
+    
+
+In **Firefox** this can be done with: 
+
+- Windows: 
+  ::
+    
+    CTRL-SHIFT-K 
+    
+- Mac OS X: 
+  ::
+    
+    ALT-⌘-K
+
 
 A screenshot
+............
 
 If the issue is a flaw with the user interface (i.e. something that looks wrong) please attach a screenshot.
 
-Look here for details on how to take a screenshot on Windows.
+Look here for details on how to take a screenshot on **Windows** (http://www.wikihow.com/Take-a-Screenshot-in-Microsoft-Windows).
 
-Look here for details on how to take a screenshot on Mac OS X
+Look here for details on how to take a screenshot on **Mac OS X** (http://guides.macrumors.com/Taking_Screenshots_in_Mac_OS_X)
 
-For Linux|GNU, pressing PrtScr usually brings up a screen-capture tool.
+For **Linux|GNU**, pressing PrtScr usually brings up a screen-capture tool.
