@@ -2,13 +2,6 @@
 Troubleshooting guide
 =====================
 
-
-.. ALERT::
-
-  This section is work in progress.
-
-
-
 Enhance your administration skill, to better investigate issues, and send more detailed reports about them.
 
 
