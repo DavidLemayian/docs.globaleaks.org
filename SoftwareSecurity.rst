@@ -13,5 +13,6 @@ an overview of GlobaLeaks with regards to security considerations
 
 `Encryption: <https://github.com/globaleaks/GlobaLeaks/wiki/Encryption>`_ data protection in GlobaLeaks 
 
-- Penetration Tests: all PT and Security Audits performed against GlobaLeaks
-- Security Awareness: Tips and privacy warnings in the user interface
+`Penetration Tests: <https://github.com/globaleaks/GlobaLeaks/wiki/Penetration-Tests>`_ all PT and Security Audits performed against GlobaLeaks
+
+`Security Awareness: <https://github.com/globaleaks/GlobaLeaks/wiki/Security-Awareness>`_ Tips and privacy warnings in the user interface
