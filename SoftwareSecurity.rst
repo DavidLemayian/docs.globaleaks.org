@@ -4,8 +4,7 @@ Software Security
 
 In the following a set of documents illustrating the security features of GlobaLeaks is listed:
 
-- `Threat Model: <https://docs.google.com/document/d/1niYFyEar1FUmStC03OidYAIfVJf18ErUFwSWCmWBhcA/pub>`_
-an overview of GlobaLeaks with regards to security considerations
+- `Threat Model: <https://docs.google.com/document/d/1niYFyEar1FUmStC03OidYAIfVJf18ErUFwSWCmWBhcA/pub>`_ an overview of GlobaLeaks with regards to security considerations
 
 - `Application Security Design and Details <https://docs.google.com/document/d/1SMSiAry7x5XY9nY8GAejJD75NWg7bp7M1PwXSiwy62U/pub>`_
 
