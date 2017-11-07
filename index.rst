@@ -4,7 +4,7 @@
 	contain the root `toctree` directive.
 	
 
-Welcome to GlobaLeaks's documentation!
+Welcome to GlobaLeaks's User Manual!
 ======================================
 
 GlobaLeaks is an open-source, free software intended to enable secure and anonymous whistleblowing initiatives developed by the Hermes Center for Transparency and Digital Human Rights.
@@ -14,20 +14,18 @@ GlobaLeaks is an open-source, free software intended to enable secure and anonym
 	:name: userguidetoc
 	:maxdepth: 2
 	
-	Procedure
 	Glossary
 	Features
-	SoftwareSecurity
 	TechnicalRequirements
 	InstallationGuide
 	FirstConfigurationGuide
 	ConfigurationGuide
 	CustomizationGuide
-	AdvancedConfiguration
 	IntegrationGuide
 	UpgradeGuide
 	BackupGuide
 	TroubleShootingGuide
+        Procedure
 	
 	.. todo::
 	   developers/ExperimentalReleasesGuidelines
