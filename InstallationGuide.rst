@@ -6,9 +6,6 @@ The following is intended to guide you through the installation and running of G
 
 Before starting the installation, make sure to read and understand the :doc:`Technical Requirements </TechnicalRequirements>`.
 
-.. Important::
-   If you want to support our research you can follow the :doc:`guidelines to set up the GlobaLeaks Experimental Release </ExperimentalReleasesGuidelines>`.
-
 **Install GlobaLeaks**
 
 Copy & Paste the following commands in your terminal: ::
@@ -18,7 +15,6 @@ Copy & Paste the following commands in your terminal: ::
   chmod +x install-globaleaks.sh
   
   ./install-globaleaks.sh
-  
 
 **Configure GlobaLeaks**
 
