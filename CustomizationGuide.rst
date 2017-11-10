@@ -56,7 +56,7 @@ This CSS example shows how to customize the Background Color of the application.
 
 Let's create a file styles.css as follows:
 
-..
+:code:
   body
   {
      background-color: red;
