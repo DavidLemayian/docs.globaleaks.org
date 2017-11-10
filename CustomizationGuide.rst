@@ -38,7 +38,9 @@ On page http://yoursite.com/#/admin/content, in the **Main Configuration tab** i
 
 On page http://[…]/#/admin/content, on tab "Theme Customization" it's possible to customize the look and feel by uploading custom CSS.
 
-DANGER! Be aware that you can easily compromise a whistleblowers identity by embedding custom fonts, images from external sources, and links to other websites. This is especially important if you are making the platform available over HTTPS.
+.. CAUTION::
+  **Be aware that you can easily compromise a whistleblowers identity by embedding custom fonts, images from external sources, and links to other websites. This is especially important if you are making the platform available over HTTPS.**
+
 
 Uploaded files will override the default Globaleaks' CSS files.
 
