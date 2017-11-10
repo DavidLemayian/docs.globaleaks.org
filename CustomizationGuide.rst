@@ -57,6 +57,7 @@ This CSS example shows how to customize the Background Color of the application.
 Let's create a file styles.css as follows:
 
 .. code::
+ 
   body
   {
      background-color: red;
@@ -71,6 +72,7 @@ This CSS example shows how to customize the background image of the application.
 Then we can pick and align it:
 
 .. code::
+  
   body
   {
      background-image:url('/static/background.png');
