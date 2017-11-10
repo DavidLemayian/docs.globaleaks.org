@@ -1,27 +1,40 @@
-Through the adminstrators control panel, GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe, and caution is adviced using the advanced features. Some are experimental, and may be removed or changed in future versions of the software.
+===================
+Customization Guide
+===================
 
+Through the administrators control panel, GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe, and caution is adviced using the advanced features. Some are experimental, and may be removed or changed in future versions of the software.
+
+
+.. ATTENTION :
+   This document is undergoing a review for contents. 
+   The information in the following could be obsolete, not aligned with current features of the software.
+   
+   
 Basic Customization Guide (default)
+-----------------------------------
 
+The **Basic Customization Guide** enables you to customize all the most important features of the application, like for example:
 
-The Basic Customization Guide enables you to customize all the most important features of the application, like for example:
+- Interface text;
+- the look and feel (CSS, Fonts, Logos, Background)
 
-Interface text;
-the look and feel (CSS, Fonts, Logos, Background)
 All these settings are available through the admin panel offered by the application, and this is the safe way to customize the application.
 
-Node Info Customization
 
-On page http://yoursite.com/#/admin/content, in the "Main Configuration" tab it's possible to customize the following options:
+Platform Info Customization
+...........................
 
-Initiative logo
-Node name
-Node Subtitle
-Node Description
-Node Footer
-Node Presentation
-Tor Hidden Service
-Tor2web Public Site
-Look and Feel Customization
+On page http://yoursite.com/#/admin/content, in the **Main Configuration tab** it is possible to customize the following options:
+
+- Initiative logo
+- Node name
+- Node Subtitle
+- Node Description
+- Node Footer
+- Node Presentation
+- Tor Hidden Service
+- Tor2web Public Site
+- Look and Feel Customization
 
 On page http://[…]/#/admin/content, on tab "Theme Customization" it's possible to customize the look and feel by uploading custom CSS.
 
