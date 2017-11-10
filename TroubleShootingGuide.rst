@@ -125,17 +125,17 @@ You are strongly encouraged to change the exception mail address.
 General overview
 ----------------
 
-From the Administrator panel there are three overview options, they permit a general overview of the database content and initiative usage. some anomalies may be spotted from here. The three views are: Tip usage (frequency of access, time to live, etc), Files reference on the database and eventually inconsistency with files stored but not recorded on the database (nothing that can happen normally, but if the database is removed from a running installation, the files related would remain stored).
+From the Administrator panel there are three overview options, they permit a general overview of the database content and initiative usage. some anomalies may be spotted from here. The three views are: Submission usage (frequency of access, time to live, etc), Files reference on the database and eventually inconsistency with files stored but not recorded on the database (nothing that can happen normally, but if the database is removed from a running installation, the files related would remain stored).
 
-Tip overview
+Submission overview
 ............
 
 - **status**: is usually first, and means that the InternalTip has been delivered for the first time to the recipient.
 - **creation_date**: aligned with the time-zone of the server, the creation date states the time the whistleblower accessed the submission interface.
 - **wb_last_access**: A relative date showing if the wb has come back with the receipt
 - **internalfiles**: size, filename and content-type of the submitted files.
-- **recipienttips**: the status of users tips, notified means they have already received an email with the new Tip notification.
-- **expiration_date**: Time when tip, related files and comment will be deleted, (check the [customization guide] to change it, search for "timetolive")
+- **recipienttips**: the status of users' submissions, notified means they have already received an email with the new Submission notification.
+- **expiration_date**: Time when submission, related files and comment will be deleted, (check the [customization guide] to change it, search for "timetolive")
 - **context**: Name of the context the submission is submitted under.
 - **comments**: Comments authors and timing.
 
@@ -144,13 +144,13 @@ User overview
 
 - **User**: Name and link to the recipient
 - **failed login**: Number of failed logins since the last successful access.
-- **Recipient tips**: A list containing the status of the available recipient-tip (notified, commonly), and the notification date, if available.
+- **Recipient submissions**: A list containing the status of the available recipient-submission (notified, commonly), and the notification date, if available.
 - **Files and download**: list of available files and the number of downloads.
 
 Files overview
 ..............
 
-- **Name**: Original filename, interntip (ID) which belong to, date of submission and path on the disk
+- **Name**: Original filename, ID which belong to, date of submission and path on the disk
 - **Info**: Content-type declared by the whistleblowers browser.
 - **Size**: In byte.
 - **References**: Number of Recipienttips associated to that file.
