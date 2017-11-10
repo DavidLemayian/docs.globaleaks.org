@@ -18,7 +18,7 @@ Copy & Paste the following commands in your terminal: ::
 
 **Configure GlobaLeaks**
 
-There is a :doc:`Configuration Guide </ConfigurationGuide>` for your new GlobaLeaks node.
+There is a :doc:`Configuration Guide </ConfigurationGuide>` for your new GlobaLeaks platform installation.
 
 **Expose GlobaLeaks via HTTPS as a normal website**
 
