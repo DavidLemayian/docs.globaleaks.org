@@ -27,16 +27,16 @@ Platform Info Customization
 On page http://yoursite.com/#/admin/content, in the **Main Configuration tab** it is possible to customize the following options:
 
 - Initiative logo
-- Node name
-- Node Subtitle
-- Node Description
-- Node Footer
-- Node Presentation
+- Platform (Initiative) name
+- Platform (Initiative) Subtitle
+- Platform (Initiative) Description
+- Platform Footer
+- Platform (Initiative) Presentation
 - Tor Hidden Service
-- Tor2web Public Site
+- Public Site
 - Look and Feel Customization
 
-On page http://[…]/#/admin/content, on tab "Theme Customization" it's possible to customize the look and feel by uploading custom CSS.
+On page https://yoursite.com/#/admin/content, via the **Theme Customization tab** it is possible to customize the look and feel by uploading custom CSS.
 
 .. CAUTION::
   **Be aware that you can easily compromise a whistleblowers identity by embedding custom fonts, images from external sources, and links to other websites. This is especially important if you are making the platform available over HTTPS.**
@@ -44,20 +44,25 @@ On page http://[…]/#/admin/content, on tab "Theme Customization" it's possible
 
 Uploaded files will override the default Globaleaks' CSS files.
 
-On the same page it's possible to upload a custom file by clicking "Load Custom File", (e.g., custom favicon.ico, robots.txt or a background.png).
+On the same page it is possible to upload a custom file by clicking **Load Custom File**, (e.g., custom favicon.ico, robots.txt or a background.png).
 
-Uploaded files are accessible in the /static path (e.g., static/file.ext).
+Uploaded files are accessible in the http://yoursite.com/#/static path (e.g., static/file.ext).
+
 
 Background Color Customization Example
+......................................
 
 This CSS example shows how to customize the Background Color of the application.
 
 Let's create a file styles.css as follows:
 
-body
-{
-   background-color: red;
-}
+..
+  body
+  {
+     background-color: red;
+  }
+
+
 Background Image Customization Example
 
 This CSS example shows how to customize the background image of the application. Upload a background image through the "Load Custom File button"; let's call it 'background.png'.
