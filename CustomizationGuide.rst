@@ -83,49 +83,64 @@ Then we can pick and align it:
 
 
 Font Customization Example
+..........................
 
 This CSS example shows how to customize the font of the application. Upload a custom font through the "Load Custom File button"; let's choose 'antani.ttf'.
 
 Point to the file in styles.css as follows:
 
-@font-face {
-    font-family: 'Antani';
-    src: url('static/antani.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+.. code::
+  
+  @font-face {
+      font-family: 'Antani';
+      src: url('static/antani.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  body {
+      font-family: 'Antani', Helvetica, Arial, Sans;
+      font-size: 16px;
+  }
 
-body {
-    font-family: 'Antani', Helvetica, Arial, Sans;
-    font-size: 16px;
-}
+
 Translations Customization
+..........................
 
-On the page http://[…]/#/admin/content, on the tab "Translation Customization", it's possible to enable current translation languages and eventually load custom translations.
+On the page http://[…]/#/admin/content, via the **Translation Customization tab**, it is possible to enable available translation languages and eventually load custom translations.
 
 GlobaLeaks is currently translated into many languages thanks to community effort. https://www.transifex.com/otf/globaleaks/dashboard/
 
-Translations are added to the Globaleaks package upon a new language reaching a coverage of more than 50% of translated sentences; if your language is missing, the best you can do is to help translating it.
+.. HINT::
+  Translations are added to the Globaleaks package whenever a new language reaches a coverage of more than 50% of translated sentences; if your language is missing, or its translation need improvement, the best you can do is to help translating it.
+
 
 CSS #BodyDefault class extensions
+..................................
 
 The application also attaches the following CSS classes to the #bodyDefault <div> so that you can customize pages based on the application's location and state. For example, when a user navigates from /#/submission to /#/login the class .ext-public will be removed from #BodyDefault and .ext-login will be added.
 
-Class	Description
-.ext-public	is appended to every page intended for Whistleblowers. These are the public pages.
-.ext-embed is always appended to #bodyDefault if the URL of page includes ?embedded=true
-.ext-authenticated is appended to every page when a user is authenticated. This field may be deprecated.
+**Class	Description**
+
+- .ext-public	is appended to every page intended for Whistleblowers. These are the public pages.
+- .ext-embed is always appended to #bodyDefault if the URL of page includes ?embedded=true
+- .ext-authenticated is appended to every page when a user is authenticated. This field may be deprecated.
+
 Refer to this file for an example on how to use these classes.
 
 Translated links useful for landing pages
+.........................................
 
 GlobaLeaks offers the possibility to provide users links automatically localized in a chosen language, in order to avoid users having to switch between languages manually. For every link it would be possible to provide localized links by simply appending the short code of the language to the URL. For example to provide a internationalized landing page for http://[…]/#/admin/submission) it would be possible to use:
 
-http://[…]/#/admin/submission/it for an Italian page
-http://[…]/#/admin/submission/ru for the Russian equivalent
-For the full list of available languages codes, please refer to the application page http://[…]/#/admin/content, on the "Translation Customization" tab.
+- http://[…]/#/admin/submission/it for an Italian page
+- http://[…]/#/admin/submission/ru for the Russian equivalent
+
+For the full list of available languages codes, please refer to the application page http://[…]/#/admin/content, via the **Translation Customization tab**.
+
 
 Notification Templates Customization
+....................................
 
 On page http://[…]/#/admin/content, on the tabs called "Plaintext Notification Templates" and "Encrypted Notification Templates" it's possible to configure email templates for plaintext and encrypted notification respectively.
 
