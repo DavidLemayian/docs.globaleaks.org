@@ -16,7 +16,7 @@ For security and resource availability, GlobaLeaks needs a dedicated server. Dep
 **Minimum requirements**:
 
 - CPU : Dual core 2.0GHz
-- RAM : 4GB (Does not impact the maximum filesize that a node can handle in upload)
+- RAM : 4GB (Does not impact the maximum filesize that a platform installation can handle in upload)
 - STORAGE: 40GB Allocate more based on data retention policy and (expected) traffic.
 - I/O : 10Mbit/s (shared)
 - Email account
