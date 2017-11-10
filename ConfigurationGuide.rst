@@ -18,7 +18,7 @@ The admin interface shows all the configurable options:
 .. image:: admin1.png
 
 
-By clicking on "General" in the menu on the left of the page, it will be possible to access to the different tabs that allows to configure and customize the GlobaLeaks node in its every aspect:
+By clicking on "General" in the menu on the left of the page, it will be possible to access to the different tabs that allows to configure and customize the GlobaLeaks Platform installation in its every aspect:
 
 
 .. image:: admin2.png
