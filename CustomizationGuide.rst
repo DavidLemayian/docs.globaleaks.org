@@ -56,7 +56,7 @@ This CSS example shows how to customize the Background Color of the application.
 
 Let's create a file styles.css as follows:
 
-:code:
+.. code::
   body
   {
      background-color: red;
@@ -64,18 +64,22 @@ Let's create a file styles.css as follows:
 
 
 Background Image Customization Example
+......................................
 
-This CSS example shows how to customize the background image of the application. Upload a background image through the "Load Custom File button"; let's call it 'background.png'.
+This CSS example shows how to customize the background image of the application. Upload a background image through the **Load Custom File button**; let's call it 'background.png'.
 
 Then we can pick and align it:
 
-body
-{
-   background-image:url('/static/background.png');
-   background-repeat: repeat;
-   background-position: top center;
-   background-attachment: fixed;
-}   
+.. code::
+  body
+  {
+     background-image:url('/static/background.png');
+     background-repeat: repeat;
+     background-position: top center;
+     background-attachment: fixed;
+  }
+
+
 Font Customization Example
 
 This CSS example shows how to customize the font of the application. Upload a custom font through the "Load Custom File button"; let's choose 'antani.ttf'.
