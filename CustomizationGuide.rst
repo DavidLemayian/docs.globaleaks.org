@@ -5,7 +5,7 @@ Customization Guide
 Through the administrators control panel, GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe, and caution is adviced using the advanced features. Some are experimental, and may be removed or changed in future versions of the software.
 
 
-.. ATTENTION :
+.. ATTENTION::
    This document is undergoing a review for contents. 
    The information in the following could be obsolete, not aligned with current features of the software.
    
