@@ -209,11 +209,10 @@ Notification: Encrypted or plaintext email about a new submission, file, message
 
 - %MessageContent%: This contains all messages, and can be sensitive, as it comes directly from the whistleblower.
 
-Non notification template
+**Non notification template**
 
 When a recipient downloads the full collection of the available files (in .zip format) a file named DESCRIPTION.txt is added to the archive.
-
-This file can be have it's content customized and has its own set of keywords (beside the Shared Keywords above)
+This file can have its content customized and has its own set of keywords (beside the Shared Keywords above)
 
 **Collection Archive Description**
 
