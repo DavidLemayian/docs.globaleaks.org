@@ -146,8 +146,12 @@ On page http://[…]/#/admin/content, on the tabs called "Plaintext Notification
 
 For example, by defining a notification template email with:
 
-"Hello %ReceiverName%, there is a new submission for you in %ContextName%".
-The recipient would get an email with %ReceiverName% replaced with their configured name, and %ContextName% with the name of the context of the submission in question.
+.. code::
+
+  "Hello %ReceiverName%, there is a new submission for you in %ContextName%".
+
+
+The recipient would get an email with %ReceiverName% replaced with his configured name, and %ContextName% with the name of the context of the submission in question.
 
 There are four notification events (New submission, new comment, new message or new file uploaded) and for each one it is possible to configure a specific email template. In addition it's also possible to configure the template for a .txt file that will be included in all collection archives downloaded through the platform.
 
@@ -159,56 +163,61 @@ To use a keyword, add percentage signs around it.
 
 The following is the list of all availalbe keywords
 
-Shared keywords available in all notification templates
+**Shared keywords available in all notification templates**
 
 Notification: Encrypted or plaintext email about a new submission, file, message or comment.
 
-%EventTime%: Pretty timestamp with the name of the month in English (no localization available)
-%NodeName%: The name of your node
-%HiddenService%: The URL of the configured hidden service
-%PublicSite%: The URL of the project reachable from the outside
-%ReceiverName%: The name of the recipient
-%ContextName%: The name of the context related (every submission is always under one and only one context)
-Submission event
+- %EventTime%: Pretty timestamp with the name of the month in English (no localization available)
+- %NodeName%: The name of your node
+- %HiddenService%: The URL of the configured hidden service
+- %PublicSite%: The URL of the project reachable from the outside
+- %ReceiverName%: The name of the recipient
+- %ContextName%: The name of the context related (every submission is always under one and only one context)
 
-%TipTorURL%: URL of the hidden service + the submission ID, usable by the recipient (prior authentication) to access the submission.
-%TipT2WURL%: This URL used for the public website (by default a tor2web extenal website) for use in reaching the submission. This is actually available only if the node is configured in to permit recipients access via Tor2Web (denied by default. Check Admin panel, Advanced Settings -> tor2web Accessibility)
-%TipNum%: a "unique" three digit number assigned to every submission. Every recipient has a different %TipNum% for every submission. Used to supply an email subject, in order to easily follow the
-encrypted submission event.
+**Submission event**
 
-%TipFields%: The dump of the submission fields! This is sensitive, check the security consideration here: https://docs.google.com/a/apps.globaleaks.org/document/d/1niYFyEar1FUmStC03OidYAIfVJf18ErUFwSWCmWBhcA/edit#heading=h.la9gjvhg62sq
-Comment event
+- %TipTorURL%: URL of the hidden service + the submission ID, usable by the recipient (prior authentication) to access the submission.
+- %TipT2WURL%: This URL used for the public website (by default a tor2web extenal website) for use in reaching the submission. This is actually available only if the node is configured in to permit recipients access via Tor2Web (denied by default. Check Admin panel, Advanced Settings -> tor2web Accessibility)
+- %TipNum%: a "unique" three digit number assigned to every submission. Every recipient has a different %TipNum% for every submission. Used to supply an email subject, in order to easily follow the encrypted submission event.
+- %TipFields%: The dump of the submission fields! This is sensitive, check the security consideration here: https://docs.google.com/a/apps.globaleaks.org/document/d/1niYFyEar1FUmStC03OidYAIfVJf18ErUFwSWCmWBhcA/edit#heading=h.la9gjvhg62sq
 
-%CommentSource%: is "Whistleblower" or "Recipient", useful for specifying which is the source of the comment.
-all the submission event keywords
-Encrypted comment event
+**Comment event**
 
-%CommentContent%: This contains all comments, and can be sensitive, can be from either a whistleblower and a recipient.
-File event
+- %CommentSource%: is "Whistleblower" or "Recipient", useful for specifying which is the source of the comment.
+- all the submission event keywords
 
-%FileName%: The name of the file
-%FileType%: The content type of the file
-%FileSize%: The size expressed in bytes
-all the submission event keywords
-Encrypted file event
+**Encrypted comment event**
 
+- %CommentContent%: This contains all comments, and can be sensitive, can be from either a whistleblower and a recipient.
+
+**File event**
+
+- %FileName%: The name of the file
+- %FileType%: The content type of the file
+- %FileSize%: The size expressed in bytes
+- all the submission event keywords
+
+**Encrypted file event**
 (Not yet implemented, %FileDescription%, would contain the description of the file provided by the whistleblower)
-Message event
 
-%MessageSource%: A fixed string at the moment, with sole option of being: 'whistleblower', because messages are sent directly between one receipient and the whistleblower, and only recipients can get notifications,
-all the submission event keywords
-Encrypted Message event
+**Message event**
 
-%MessageContent%: This contains all messages, and can be sensitive, as it comes directly from the whistleblower.
+- %MessageSource%: A fixed string at the moment, with sole option of being: 'whistleblower', because messages are sent directly between one receipient and the whistleblower, and only recipients can get notifications,
+- all the submission event keywords
+
+**Encrypted Message event**
+
+- %MessageContent%: This contains all messages, and can be sensitive, as it comes directly from the whistleblower.
+
 Non notification template
 
 When a recipient downloads the full collection of the available files (in .zip format) a file named DESCRIPTION.txt is added to the archive.
 
 This file can be have it's content customized and has its own set of keywords (beside the Shared Keywords above)
 
-Collection Archive Description
+**Collection Archive Description**
 
-%FileList%: List of the files downloaded
-%FilesNumber%: Number of the files
-%TotalSize%: Total size of the files
+- %FileList%: List of the files downloaded
+- %FilesNumber%: Number of the files
+- %TotalSize%: Total size of the files
 
