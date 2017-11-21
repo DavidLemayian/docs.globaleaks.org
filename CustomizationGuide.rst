@@ -15,99 +15,74 @@ Basic Customization Guide
 
 The **Basic Customization Guide** enables you to customize all the most important features of the application, like for example:
 
-- Interface text;
+- Interface texts;
 - the look and feel (CSS, Fonts, Logos, Background)
 
 All these settings are available through the admin panel offered by the application, and this is the safe way to customize the application.
 
-
 Platform Info Customization
 ...........................
 
-On page http://yoursite.com/#/admin/content, in the **Main Configuration tab** it is possible to customize the following options:
+On section **General Settings**, in the **Main Configuration** tab it is possible to customize the following:
 
-- Initiative logo
-- Platform (Initiative) name
-- Platform (Initiative) Subtitle
-- Platform (Initiative) Description
-- Platform Footer
-- Platform (Initiative) Presentation
-- Tor Hidden Service
-- Public Site
-- Look and Feel Customization
+- Logo
+- Project name
+- Homepage title
+- Presentation
+- Description
+- Question to solicit possible whistleblowers
+- Whistleblowing button
+- Footer
 
-On page https://yoursite.com/#/admin/content, via the **Theme Customization tab** it is possible to customize the look and feel by uploading custom CSS.
+On section **General Settings**, in the **Theme customization** tab it is possible to load a set of files the look and feel of the platform, including a custom CSS and Javascript.
 
 .. CAUTION::
   **Be aware that you can easily compromise a whistleblowers identity by embedding custom fonts, images from external sources, and links to other websites. This is especially important if you are making the platform available over HTTPS.**
 
+On the same page it is possible to upload a custom file by clicking **Load Custom File**, (e.g., background.png).
 
-Uploaded files will override the default Globaleaks' CSS files.
+Uploaded files are accessible in the /s/ path (e.g., /s/background.png).
 
-On the same page it is possible to upload a custom file by clicking **Load Custom File**, (e.g., custom favicon.ico, robots.txt or a background.png).
-
-Uploaded files are accessible in the http://yoursite.com/#/static path (e.g., static/file.ext).
-
-
-Background Color Customization Example
+Example 1: custom background
 ......................................
 
 This CSS example shows how to customize the Background Color of the application.
 
 Let's create a file styles.css as follows:
 
-.. code::
- 
+.. code:: 
   body
   {
      background-color: red;
   }
 
-
-Background Image Customization Example
-......................................
-
-This CSS example shows how to customize the background image of the application. Upload a background image through the **Load Custom File button**; let's call it 'background.png'.
-
-Then we can pick and align it:
-
-.. code::
-  
-  body
-  {
-     background-image:url('/static/background.png');
-     background-repeat: repeat;
-     background-position: top center;
-     background-attachment: fixed;
-  }
-
-
-Font Customization Example
+Example 2: custom font
 ..........................
 
-This CSS example shows how to customize the font of the application. Upload a custom font through the "Load Custom File button"; let's choose 'antani.ttf'.
+This CSS example shows how to customize the font of the application.
 
-Point to the file in styles.css as follows:
+Upload a background image called 'background.png' using the **Upload custom file** functionality.
 
+Then load a css file like the following:
 .. code::
   
   @font-face {
-      font-family: 'Antani';
-      src: url('static/antani.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
+    font-family: 'Antani';
+    src: url('static/antani.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
   
   body {
-      font-family: 'Antani', Helvetica, Arial, Sans;
-      font-size: 16px;
+    font-family: 'Antani', Helvetica, Arial, Sans;
+    font-size: 16px;
   }
 
 
-Translations Customization
+Text customization
 --------------------------
 
-On the page http://[…]/#/admin/content, via the **Translation Customization tab**, it is possible to enable available translation languages and eventually load custom translations.
+On section **General Settings**, in the **Text customization** tab it is possible to configure text overrides.
 
 GlobaLeaks is currently translated into many languages thanks to community effort. https://www.transifex.com/otf/globaleaks/dashboard/
 
@@ -115,57 +90,49 @@ GlobaLeaks is currently translated into many languages thanks to community effor
   Translations are added to the Globaleaks package whenever a new language reaches a coverage of more than 50% of translated sentences; if your language is missing, or its translation need improvement, the best you can do is to help translating it.
 
 
-CSS #BodyDefault class extensions
+CSS Helpers
 ..................................
 
-The application also attaches the following CSS classes to the #bodyDefault <div> so that you can customize pages based on the application's location and state. For example, when a user navigates from /#/submission to /#/login the class .ext-public will be removed from #BodyDefault and .ext-login will be added.
+The platform attaches the following CSS classes to the #bodyDefault container (<div>) so that you can customize pages based on the application's location and state.
+
+For example, when a user navigates from /#/submission to /#/login the class .ext-public will be removed from #BodyDefault and .ext-login will be added.
 
 **Class	Description**
 
-- .ext-public	is appended to every page intended for Whistleblowers. These are the public pages.
+- .ext-public is appended to every page intended for Whistleblowers. These are the public pages.
 - .ext-embed is always appended to #bodyDefault if the URL of page includes ?embedded=true
 - .ext-authenticated is appended to every page when a user is authenticated. This field may be deprecated.
-
-Refer to this file for an example on how to use these classes.
 
 Translated links useful for landing pages
 .........................................
 
-GlobaLeaks offers the possibility to provide users links automatically localized in a chosen language, in order to avoid users having to switch between languages manually. For every link it would be possible to provide localized links by simply appending the short code of the language to the URL. For example to provide a internationalized landing page for http://[…]/#/admin/submission) it would be possible to use:
+The platform offers the possibility to provide users links automatically localized in a chosen language, in order to avoid users having to switch between languages manually. For every link it would be possible to provide localized links by simply appending a query argument lang like "?lang=en".
 
-- http://[…]/#/admin/submission/it for an Italian page
-- http://[…]/#/admin/submission/ru for the Russian equivalent
+For example to provide a internationalized home page for http://[…]/#/) it would be possible to use:
 
-For the full list of available languages codes, please refer to the application page http://[…]/#/admin/content, via the **Translation Customization tab**.
+- http://[…]/#/?lang=it for an Italian page
+- http://[…]/#/?lang?en for the Russian equivalent
+
+For the full list of available languages codes, please refer to the tab **Languages** in the **General settings** section of the administration panel.
 
 
-Notification Templates Customization
+Customization of the Notification Templates
 -------------------------------------
+On section **Notification settings**, in the **Notification templates** tab it is possible to customize the templates used for mail notifications.
 
-On page http://[…]/#/admin/content, on the tabs called "Plaintext Notification Templates" and "Encrypted Notification Templates" it's possible to configure email templates for plaintext and encrypted notification respectively.
+Mail templates offers the possibility to use some variables that will be replaced with application data.
 
-For example, by defining a notification template email with:
+For example, by defining a notification template like the following the recipient would get an email with %ReceiverName% replaced with his configured name, and %ContextName% with the name of the context of the submission.
 
 .. code::
 
   "Hello %ReceiverName%, there is a new submission for you in %ContextName%".
 
-
-The recipient would get an email with %ReceiverName% replaced with his configured name, and %ContextName% with the name of the context of the submission in question.
-
-There are four notification events (New submission, new comment, new message or new file uploaded) and for each one it is possible to configure a specific email template. In addition it's also possible to configure the template for a .txt file that will be included in all collection archives downloaded through the platform.
-
-For each specific template there are some specific keywords available; for example, the encrypted version of a template allows more keywords.
-
-The keyword available in encrypted template could contain sensitive data
-
-To use a keyword, add percentage signs around it.
-
-The following is the list of all availalbe keywords
+For each specific template there are some specific keywords available.
 
 **Shared keywords available in all notification templates**
 
-Notification: Encrypted or plaintext email about a new submission, file, message or comment.
+Notification of new submissions, files, messages and comments
 
 - %EventTime%: Pretty timestamp with the name of the month in English (no localization available)
 - %NodeName%: The name of your node
