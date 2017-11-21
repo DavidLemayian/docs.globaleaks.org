@@ -10,8 +10,8 @@ Through the administrators control panel, GlobaLeaks has room for rich customiza
    The information in the following could be obsolete, not aligned with current features of the software.
    
    
-Basic Customization Guide (default)
------------------------------------
+Basic Customization Guide
+-------------------------
 
 The **Basic Customization Guide** enables you to customize all the most important features of the application, like for example:
 
@@ -105,7 +105,7 @@ Point to the file in styles.css as follows:
 
 
 Translations Customization
-..........................
+--------------------------
 
 On the page http://[…]/#/admin/content, via the **Translation Customization tab**, it is possible to enable available translation languages and eventually load custom translations.
 
@@ -140,7 +140,7 @@ For the full list of available languages codes, please refer to the application 
 
 
 Notification Templates Customization
-....................................
+-------------------------------------
 
 On page http://[…]/#/admin/content, on the tabs called "Plaintext Notification Templates" and "Encrypted Notification Templates" it's possible to configure email templates for plaintext and encrypted notification respectively.
 
