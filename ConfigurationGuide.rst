@@ -67,7 +67,10 @@ To configure HTTPS, go to "Administration interface - Network settings" and sele
 .. image:: HTTPS_Conf_1.png
 
 
-If the verification process is successful, just click on the "Proceed" button; otherwise, you have to verify that the domain name you choose is correctly set up. Keep in mind that domain name propagation over DNS can take some time.
+If the verification process is successful, just click on the "Proceed" button; otherwise, you have to verify that the domain name you choose is correctly set up.
+
+.. Note::
+   Keep in mind that domain name propagation over DNS can take some time.
 
 
 .. image:: HTTPS_Conf_2.png
