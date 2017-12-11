@@ -10,7 +10,7 @@ http://localhost:8082/#/admin
 .. image:: admin0.png
 
 
-To log in as administrator, use the admin credentials created at STEP 4 of the `First Configuration Guide <https://globaleaks.readthedocs.io/en/latest/FirstConfigurationGuide.html>`_.
+To log in as administrator, use the admin credentials created at `STEP 4 of the First Configuration Guide <https://globaleaks.readthedocs.io/en/latest/FirstConfigurationGuide.html#step-4-configure-admin-account>`_.
 
 The admin interface shows all the configurable options:
 
