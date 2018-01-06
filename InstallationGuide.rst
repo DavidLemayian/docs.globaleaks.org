@@ -6,6 +6,12 @@ The following is intended to guide you through the installation and running of G
 
 Before starting the installation, make sure to read and understand the :doc:`Technical Requirements </TechnicalRequirements>`.
 
+.. IMPORTANT::
+   GlobaLeaks is built to give the best technical anonimity to the Whistleblower, not to the node administrator nor to the node location. 
+   GlobaLeaks does not implement security measures against de-anonymization of the node location ot of the node administrator.
+   Furthermore, GlobaLeaks sends some very little information to the developers in order to early debug malfunctioning. The information sent are [to be completed]
+   
+
 **Install GlobaLeaks**
 
 Copy & Paste the following commands in your terminal: ::
