@@ -13,6 +13,7 @@ Support for more distributions is planned.
 **Server sizing**
 -----------------
 **Requirements**:
+
 - CPU: Dual core 2.0GHz
 - RAM: 2GB (Does not impact the maximum filesize that a platform installation can handle in upload)
 - STORAGE: 20GB Allocate more based on data retention policy and (expected) traffic.
