@@ -4,19 +4,20 @@ Backup and Restore
 The following bash script could be used in order to perform a backup manually:
 
 .. code:: 
-    #!/bin/sh
-    # This is the post installation script for globaleaks
-    set -e
 
-    if [ -d "/var/globaleaks" ]; then
-      timestamp=$(date +%s)
-      version=`dpkg -s globaleaks | grep '^Version:' | cut -d ' ' -f2`
-      filepath=/var/globaleaks/backups/globaleaks-$version-$timestamp.tar.gz
-      echo "Creating backup of /var/globaleaks in $filepath"
-      mkdir -p /var/globaleaks/backups
-      chown globaleaks:globaleaks /var/globaleaks/backups
-      tar --exclude='/var/globaleaks/backups' -zcvf $filepath /var/globaleaks
-    fi
+   #!/bin/sh
+   # This is the post installation script for globaleaks
+   set -e
+
+   if [ -d "/var/globaleaks" ]; then
+     timestamp=$(date +%s)
+     version=`dpkg -s globaleaks | grep '^Version:' | cut -d ' ' -f2`
+     filepath=/var/globaleaks/backups/globaleaks-$version-$timestamp.tar.gz
+     echo "Creating backup of /var/globaleaks in $filepath"
+     mkdir -p /var/globaleaks/backups
+     chown globaleaks:globaleaks /var/globaleaks/backups
+     tar --exclude='/var/globaleaks/backups' -zcvf $filepath /var/globaleaks
+   fi
 
 After the completion of the command you willfind  a tar.gz archive within the /var/globaleaks/backups.
 The file will have the format: globaleaks-$version-$timestamp.tar.gz
