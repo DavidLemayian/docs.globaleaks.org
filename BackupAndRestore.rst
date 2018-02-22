@@ -6,7 +6,6 @@ The following bash script could be used in order to perform a backup manually:
 .. code:: 
 
    #!/bin/sh
-   # This is the post installation script for globaleaks
    set -e
 
    if [ -d "/var/globaleaks" ]; then
