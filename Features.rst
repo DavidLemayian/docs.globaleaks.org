@@ -1,24 +1,38 @@
 Features
 ===================
 
-- Configurable contexts
+- Configurable submission contexts and questionnaires
 
-- Configurable submission steps and custom fields
+- Single and multiple recipients capabilities
 
-- Configurable recipients
+- Support for anonymous submissions (via Tor) and confidential submissions (via HTTPS)
 
-- Support for anonymous submissions (via Tor) and confidential submissions (via Tor2web/HTTPS)
+- Rich configuration options and defaults.
 
-- Support for end-to-end encryption (soon by means of the PGP encryption standard)
+- Optimized UI with advanced User Experience (UX)
 
-- Support for temporary AES encryption of data that touches disk storage
+- Accessible Rich Internet Application compliant to WAI-ARIA
 
-- Configurable secure submission deliveries with PGP
+- Empbedded internationalization and localization support
 
-- Mail templating system for all the different notifications mails sent by the system
+- Fully translated in more thant 30 languages
 
-- Support for common DB systems: SQLite, (soon MySQL and PostgreSQL)
+- Support for Right-to-left (RTL) design
 
-- Rich configuration options
+- Integrated support for PGP and AES encryption
 
+- Ongoing development for clientside encryption
 
+- Configurable mail templating system for each notification
+
+- All-in-one solution including embedded webserver and SQLite database
+
+- Support for all common database systems: MySQL, PostgreSQL and MS SQL Server
+
+- Strong security with more than 7 independent audits
+
+- Including Whistleblower Identity Management features
+  compliant with Italian Anticorruption Authority Specs ANAC)
+  
+- Compliant with recent whistleblowing protection laws in the fields of whistleblowing protection
+  like Italian 190/2012 and 231/2002, French Sapin II and International ISO 37001
