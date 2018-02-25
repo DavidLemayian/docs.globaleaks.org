@@ -37,4 +37,4 @@ Features
   compliant with Italian Anticorruption Authority Specs ANAC)
   
 - Compliant with recent whistleblowing protection laws in the fields of whistleblowing protection
-  like `Italian 190/2012 and 231/2002 <https://www.anticorruzione.it/portal/public/classic/Servizi/ServiziOnline/SegnalazioneWhistleblowing>`_, French Sapin II and International ISO 37001
+  like `Italian 190/2012 and 231/2001 <https://www.anticorruzione.it/portal/public/classic/Servizi/ServiziOnline/SegnalazioneWhistleblowing>`_, French Sapin II and International ISO 37001
