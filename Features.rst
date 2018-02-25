@@ -7,7 +7,7 @@ Features
 
 - Support for anonymous submissions (via Tor) and confidential submissions (via HTTPS)
 
-- Rich configuration options and defaults.
+- Rich configuration options and defaults
 
 - Optimized UI with advanced User Experience (UX)
 
