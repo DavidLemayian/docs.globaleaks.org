@@ -7,7 +7,7 @@ Features
 
 - Support for anonymous submissions (via `Tor <https://www.torproject.org/>`_) and confidential submissions (via HTTPS)
 
-- Ingrated optimized HTTPS capability with support for `Let'sEncrypt Certification Authority <https://letsencrypt.org/>`_ 
+- Ingrated optimized HTTPS capability with support for `Let'sEncrypt <https://letsencrypt.org/>`_  Certification Authority
 
 - Rich configuration options and defaults
 
@@ -28,6 +28,8 @@ Features
 - Configurable mail templating system for each notification
 
 - All-in-one solution including embedded webserver and SQLite database
+
+- Fully unit-tested and end2end tested on commit with test code coverage over 90%
 
 - Support for all common database systems: MySQL, PostgreSQL and MS SQL Server
 
