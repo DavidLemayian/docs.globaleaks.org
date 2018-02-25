@@ -5,6 +5,8 @@ Features
 
 - Single and multiple recipients capabilities
 
+- Integrated Multi-Tenancy support
+
 - Support for anonymous submissions (via `Tor <https://www.torproject.org/>`_) and confidential submissions (via HTTPS)
 
 - Ingrated optimized HTTPS capability with support for `Let'sEncrypt <https://letsencrypt.org/>`_  Certification Authority
