@@ -35,7 +35,7 @@ Features
 
 - Support for all common database systems: MySQL, PostgreSQL and MS SQL Server
 
-- Strong security with `more than 7 independent audits <https://github.com/globaleaks/GlobaLeaks/wiki/Penetration-Tests>`_
+- Strong security with 5 independent audits <https://github.com/globaleaks/GlobaLeaks/wiki/Penetration-Tests>`_
 
 - Including Whistleblower Identity Management features
   compliant with Italian Anticorruption Authority Specs ANAC)
