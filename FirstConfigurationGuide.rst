@@ -11,7 +11,7 @@ STEP 1: Access Platform Wizard
 You can reach the Platform Wizard by your browser in two ways:
 
 
-  - from the same computer you installed GlobaLeaks on: http://127.0.0.1:8080/#/wizard
+  - from the same computer you installed GlobaLeaks on: http://127.0.0.1:8082/#/wizard
 
   - from your Tor Hidden Service hostname with Tor Browser: Example: http://2rwejhgkn3c2z56g.onion/#/wizard
 
