@@ -6,8 +6,10 @@ Make sure you understand and satisfy each of these technical requirements:
 
 **Operating System**
 --------------------
-GlobaLeaks is designed to run on GNU/Linux. Ubuntu Xenial 16.04 LTS is the officially supported platform.
-On this platform the support is guaranteed following the `Release End of Life <https://www.ubuntu.com/info/release-end-of-life>_` defined by Ubuntu.
+GlobaLeaks is designed to run on GNU/Linux.
+The software is actively developed and tested specifically for Ubuntu Bionic 18.04
+The software lifecycle of the platform includes full support for all Ubuntu LTS versions starting from Ubuntu Xenial 16.04.
+On these platforms the support is guaranteed following the `Release End of Life <https://www.ubuntu.com/info/release-end-of-life>_` defined by Ubuntu.
 Support for more distributions is planned.
 
 **Server sizing**
