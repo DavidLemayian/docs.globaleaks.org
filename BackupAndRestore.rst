@@ -1,5 +1,3 @@
-.. _backup-and-restore:
-
 =======================
 Backup and Restore
 =======================
