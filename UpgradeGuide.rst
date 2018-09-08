@@ -2,7 +2,7 @@
 Upgrade guide
 ========================   
 
-To safely upgrade a GlobaLeaks installation please proceed with a backup of your setup by following the :doc:`Backup and Restore </BackupAndRestore>`. guide.
+To safely upgrade a GlobaLeaks installation please proceed with a backup of your setup by following the :doc:`Backup and Restore </BackupAndRestore>` guide.
 
 This is necessary so that if something goes wrong and you need to rollback, you will be able to just uninstall the current package, then install the same version of globaleaks that was previously installed and working.
 
