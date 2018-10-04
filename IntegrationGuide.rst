@@ -5,7 +5,7 @@ Integration guide
 This guide illustrates how GlobaLeaks can be integrated into an existing website.
 
 
-Main Components to Integrate
+Main components to integrate
 ----------------------------
 
 There are two main components that need to be integrated into an initiative's website. They are:
@@ -26,7 +26,7 @@ Depending on the integration requirements, the following configurations are poss
 - iframe based integration
 
 
-Plugin Based Integration
+Plugin based integration
 ........................
 
 GlobaLeaks provides a specific Javascript plugin to be used for integration. The platform makes it available at /js/plugin.js.
@@ -44,7 +44,7 @@ This function can be used to embed specific platform resources. In the following
   <a href="javascript:startGlobaLeaks('https://PublicWebsite/globaleaks/#/submission')" style="text-decoration: none;">Blow the Whistle!</a>
 
 
-Iframe Based Integration
+Iframe based integration
 ........................
 
 Using iframes to integrate GlobaLeaks into a website is not recommended because browsers are known to leak information about a whistleblowers browsing activity. However, *they have been used in the past in low-risk environments* and are worth mentioning. Including the two main components is similar to the plugin based solution discussed above.
@@ -53,54 +53,39 @@ Using iframes to integrate GlobaLeaks into a website is not recommended because 
 
 ::
   
-  <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/submission"></iframe>
+  <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/#/submission?embedded=true"></iframe>
 
 
 **Receipt Interface**
 
 ::
   
-  <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/globaleaks/#/receipt"></iframe>
+  <iframe width="100%" height="100%" frameborder="0" src="https://PublicWebsite/#/receipt?embedded=true"></iframe>
 
 
-GlobaLeaks Parameters
+URL parameters
 ---------------------
 There are several URL parameters that a web developer can use to change the GlobaLeaks platform's behaviour when integrating the platform into a website.
 
 
-Language Selection
+Language selection
 ..................
 
 The lang URL parameter pre-selects the language used in the interface. The example below loads the submission interface in English.
 
 ::
   
-  https://PublicWebsite/globaleaks/#/submission?lang=en
+  /#/submission?lang=en
 
 
-Context Selection
+Context selection
 .................
 
 The context URL parameter selects a specific submission context to load by passing a UUID. For example:
 
 ::
   
-  https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d
+  /#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d
 
 
 Note that a context's UUIDs can be found on the platform in the context configuration section of the administration interface.
-
-
-Recipients Selection
-....................
-
-The receivers URL parameter selects specific recipients to the submission by passing a list of UUIDs. For example:
-
-::
-  
-  https://PublicWebsite/globaleaks/#/submission?context=06cb60d2-13a4-4aa3-926f-85b64f12239d&receivers=["06cb60d2-13a4-4aa3-926f-85b64f12239d","03cb60d2-13a4-43a3-926f-85b64f12232z"]
-
-
-This configuration requires that the context parameter is set and the recipients are selected from among those configured for the specified context.
-
-The UUIDs of recipients can be found on the platform in configuration section for each context.
