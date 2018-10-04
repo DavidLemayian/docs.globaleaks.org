@@ -27,7 +27,7 @@ By clicking on "General" in the menu on the left of the page, it will be possibl
 .. image:: admin2.png
 
 
-Add a logo and a favicon
+Configure the logo
 -------------------------
 
 The first thing you want to give to your GlobaLeaks installation is its identity by adding a logo and a favicon. 
@@ -46,7 +46,7 @@ Scroll down along the page to reach the "Save" button, click on it and have your
 .. image:: admin4.png
 
 
-Select Additional Languages
+Enable languages
 ---------------------------
 
 You may want your GlobaLeaks installation served on more than one language, other the one selected as primary during First Configuration (todo: insert cross reference).
@@ -188,7 +188,7 @@ If all is working as expected, click on the "Save" button to keep the configured
 
 
 
-Configure Recipients
+Configure recipients
 --------------------
 
 In the "First Configuration Guide" we have seen how to create a Recipient (or Receiver).
@@ -201,7 +201,7 @@ You can have one or multiple Recipients per Context, and also have one Recipient
 
 
   
-Configure Context
+Configure contexts
 -----------------
 
 In the "First Configuration Guide" we have seen how to create a Context.
@@ -236,9 +236,5 @@ You can verify the appearance by visiting ...
   This part is work in progress
 
 
-Configure Questionnaire
+Configure questionnaires
 -----------------------
-
-
-
-
