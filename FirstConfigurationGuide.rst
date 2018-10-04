@@ -1,5 +1,5 @@
 =========================
-First Configuration Guide
+First configuration guide
 =========================
 
 You have just installed your GlobaLeaks and you have to make it capable of receiving anonymous submissions that get dispatched to configured recipients. To achieve this you have to access to the Platform Wizard.

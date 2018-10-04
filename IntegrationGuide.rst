@@ -1,5 +1,5 @@
 =================
-Integration Guide
+Integration guide
 =================
 
 This guide illustrates how GlobaLeaks can be integrated into an existing website.

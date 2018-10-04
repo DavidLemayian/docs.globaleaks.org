@@ -1,5 +1,5 @@
 ======================
-Technical Requirements
+Technical requirements
 ======================
 
 Make sure you understand and satisfy each of these technical requirements:

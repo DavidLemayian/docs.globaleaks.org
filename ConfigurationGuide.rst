@@ -1,5 +1,5 @@
 ===================
-Configuration Guide
+Configuration guide
 ===================
 
 It is possible to tweak every aspect of your GlobaLeaks installation by accessing to the administration interface.
