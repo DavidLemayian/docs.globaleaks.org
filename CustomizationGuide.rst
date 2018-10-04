@@ -1,5 +1,5 @@
 ===================
-Customization Guide
+Customization guide
 ===================
 
 Through the administrators control panel, GlobaLeaks has room for rich customization. Everything within the basic customization guide is well tested and safe, and caution is adviced using the advanced features. Some are experimental, and may be removed or changed in future versions of the software.
@@ -10,10 +10,10 @@ Through the administrators control panel, GlobaLeaks has room for rich customiza
    The information in the following could be obsolete, not aligned with current features of the software.
    
    
-Basic Customization Guide
+Basic customization guide
 -------------------------
 
-The **Basic Customization Guide** enables you to customize all the most important features of the application, like for example:
+The **basic customization guide** enables you to customize all the most important features of the application, like for example:
 
 - Interface texts;
 - the look and feel (CSS, Fonts, Logos, Background)
@@ -186,4 +186,3 @@ This file can have its content customized and has its own set of keywords (besid
 - %FileList%: List of the files downloaded
 - %FilesNumber%: Number of the files
 - %TotalSize%: Total size of the files
-
