@@ -23,7 +23,7 @@ GlobaLeaks could be instead easily migrated to a new up-to-date Ubuntu System wi
 1. create an archive backup of /var/globaleaks
 2. instantiate the lates Ubuntu LTS available
 3. log on the new server and extract the backup in /var/globaleaks
-4. follow the :doc:`Installation Guide </Installation Guide>`; GlobaLeaks while installing will recognize the presence of an existing data directory and will use it
+4. follow the :doc:`Installation Guide </InstallationGuide>`; GlobaLeaks while installing will recognize the presence of an existing data directory and will use it
 
 In case of errors
 -----------------
