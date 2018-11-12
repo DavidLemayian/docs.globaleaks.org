@@ -24,4 +24,6 @@ To run the install script for updating globaleaks perform the following commands
 
 .. code::
    
-   curl https://deb.globaleaks.org/install-globaleaks.sh | bash
+   wget https://deb.globaleaks.org/install-globaleaks.sh
+   chmod +x install-globaleaks.sh
+   ./install-globaleaks.sh
