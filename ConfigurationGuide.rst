@@ -4,7 +4,7 @@ Configuration guide
 
 It is possible to tweak every aspect of your GlobaLeaks installation by accessing to the administration interface.
 
-To access the administration interface just connect to the IP address of the server you just installed with te /#/login URL parameter. 
+To access the administration interface just connect to the IP address of the server you just installed with the /#/login URL parameter. 
 
 If the IP address where the server has been installed is 10.10.10.10 the URL to access the administration interface will be http://10.10.10.10/#/login .
 
